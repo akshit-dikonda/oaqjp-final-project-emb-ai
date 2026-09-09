@@ -1,4 +1,6 @@
-# Emotion Detection Application
+# Final Project
+
+## Emotion Detection Application
 
 Emotion Detection Application using Watson NLP and Flask.
 
