@@ -1,7 +1,7 @@
 import requests
 
 
-def emotion_detector(text_to_analyze):
+def emotion_detector(text_to_analyse):
     url = "https://sn-watson-emotion.labs.skills.network/v1/watson.runtime.nlp.v1/NlpService/EmotionPredict"
 
     headers = {
@@ -10,7 +10,7 @@ def emotion_detector(text_to_analyze):
 
     input_json = {
         "raw_document": {
-            "text": text_to_analyze
+            "text": text_to_analyse
         }
     }
 
@@ -20,4 +20,4 @@ def emotion_detector(text_to_analyze):
         headers=headers
     )
 
-    return response.json()
+    return response.text
